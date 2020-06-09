@@ -1,1 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: stretch;
+	font-family: 'Muli';
+	max-width: 1654px;
+}
+
+
+/*-----------------------------PART1------------------------------*/
+h1 {
+   	font-size: 32px;
+}
+h3 {
+    font-size: 18.72px;
+}
+h4 {
+   	font-size: 16px;
+}
+p {
+   	font-size: 13.28px;
+}
+.part1 {
+    display: flex;
+    flex-direction: column;
+	background-color: #03A9F4;
+}
+
+.part1 h3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	background-color: #3E2723;
+	color: #03A9F4;
+}
+
+.photo_profil {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 50px 20px 50px;
+	height: 20%;
+}
+.photo_profil img {
+	border: solid 4px rgba(218, 175, 18, .3);
+	border-radius: 10em;
+    box-sizing: border-box;
+}
+.contact {
+	height: 25%;
+}
+.contact div {
+padding-top: 10px;
+}
+.contact p {
+	margin:0;
+}
+.contact ul li {
+	list-style-type: none;
+}
+.a_propos_de_moi {
+	height: 40%;
+}
+.a_propos_de_moi p {
+	text-align: justify;
+	padding: 35px;
+	padding-top: 0;
+}
+.icon {
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 30px;
+	font-size: 2em;
+}
+
+/*-----------------------------PART2------------------------------*/
+
+.part2 {
+	display: flex;
+    flex-direction: column;
+    width: 200%;
+	padding: 30px;
+}
+.part2 .fas {
+	color: #03A9F4;
+	font-size: 1.2em;
+	padding-right: 10px;
+}
+.head {
+	display: flex;
+	flex-direction: column;
+	padding-top: 80px;
+	padding-bottom: 110px;
+}
+.head span {
+	color: #03A9F4;
+}
+.head:after {
+	content: "";
+	border-top: 1px solid #03A9F4;
+	width: 55px;
+	margin-top: -15px;
+}
+.formation ul li,
+.experience ul li {
+	display: flex;
+	position: relative;
+}
+.formation ul li div,
+.experience ul li div {
+	flex: 1;
+}
+.formation ul li div:first-child p,
+.experience ul li div:first-child p {
+	margin: 0;
+} 
+.formation ul li div:first-child p:first-child,
+.experience ul li div:first-child p:first-child {
+	margin-top: 20px;
+}
+
+.formation ul li::after,
+.experience ul li::after {
+	content: '';
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #03A9F4;
+	top: 30px;
+	left: -30px;
+	position: absolute;
+}
+
+.formation h3,
+.experience h3,
+.recommandations h3 {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #03A9F4;
+}
+.recommandations ul {
+	padding: 0;
+}
+.recommandations ul li {
+	display: flex;
+	position: relative
+}
+.recommandations ul li div {
+	flex: 1;
+}
+/*-----------------------------RESPONSIVE PART------------------------------*/
+
+
+@media screen and (max-width: 1024px)
+{
+	body {
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+	min-width: 320px;
+	}
+	h1 {
+    	font-size: 200%;
+    }
+	h3 {
+    	font-size: 150%;
+    }
+     h4 {
+    	font-size: 150%;
+    }
+    p {
+    	font-size: 150%;
+    }
+    .part1 h3 {
+	height: 25px;
+	}
+	.photo_profil {
+	height: 10%;
+	}
+	.a_propos_de_moi {
+	height: 50%;
+	}
+	.part1,
+	.part2 {
+    width: 100%;
+    padding: 0;
+	}
+	.head:after {
+	content: "";
+	border-top: 1px solid #03A9F4;
+	width: 75px;
+	margin-top: -20px;
+	}
+	.formation ul li:nth-child(1n+0),
+	.experience ul li:nth-child(1n+0),
+	.recommandations ul li:nth-child(1n+0) {
+	display: flex;
+	flex-direction: column;
+	}
+
+	.formation h3,
+	.experience h3,
+	.recommandations h3,
+	.recommandations ul li div,
+	.head div:nth-child(1n+0) {
+	padding-left: 5px;
+	}
+
+	.head:after {
+		margin-left: 5px;
+	}
+}
 
