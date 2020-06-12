@@ -164,18 +164,18 @@ padding-top: 10px;
 		min-width: 320px;
 	}
 	h1 {
-    		font-size: 200%;
-    	}
+    	font-size: 200%;
+    }
 	h3 {
-    		font-size: 150%;
-    	}
-	h4 {
-    		font-size: 150%;
-    	}
-	p {
-    		font-size: 150%;
-    	}
-    	.part1 h3 {
+    	font-size: 150%;
+    }
+     h4 {
+    	font-size: 150%;
+    }
+    p {
+    	font-size: 150%;
+    }
+    .part1 h3 {
 		height: 25px;
 	}
 	.photo_profil {
@@ -186,9 +186,9 @@ padding-top: 10px;
 	}
 	.part1,
 	.part2 {
-    		width: 100%;
-    		padding: 0;
-		box-sizing: border-box;
+    	width: 100%;
+    	padding: 0;
+    	box-sizing: border-box;
 	}
 	.part2 {
 		padding: 25px;
@@ -206,16 +206,6 @@ padding-top: 10px;
 		flex-direction: column;
 	}
 
-	.formation h3,
-	.experience h3,
-	.recommandations h3,
-	.recommandations ul li div,
-	.head div:nth-child(1n+0) {
-		padding-left: 5px;
-	}
-
-	.head:after {
-		margin-left: 5px;
-	}
+	
 }
 
